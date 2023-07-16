@@ -1,0 +1,10 @@
+^D:\WORKSPACE\BODA\BODA\BUILD\WINDOWS\CMAKEFILES\E7B7FB33354365DA171BB7695B8145DB\GENERATE.STAMP.RULE
+setlocal
+D:\tools\visual-studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe -SD:/workspace/boda/boda/windows -BD:/workspace/boda/boda/build/windows --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file D:/workspace/boda/boda/build/windows/boda.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
